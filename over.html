@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Over - Aapje Djamila</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo"><a href="index.html">Aapje Djamila</a></h1>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="over.html" class="active">Over</a>
+        <a href="videos.html">Video's</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h2>Over mij</h2>
+    <p>
+      Hey! Dit is de donkere videoclip-versie van mijn website 😎<br>
+      Ik maak content, muziekachtige dingen en YouTube-video’s. Deze site is vooral bedoeld om alles op één plek te hebben.
+    </p>
+    <p>
+      De stijl is bewust donker, zodat YouTube-embeds, neon-accenten en foto’s goed opvallen. Als ik later wil switchen naar
+      een lichte stijl, kan ik gewoon <code>style.css</code> aanpassen.
+    </p>
+
+    <h3>Ideeën voor later</h3>
+    <ul>
+      <li>Pagina voor muziek / Spotify / SoundCloud</li>
+      <li>Pagina met projecten (VR, Roblox, UE5)</li>
+      <li>Downloadpagina voor fans</li>
+      <li>Contact / collab formulier</li>
+    </ul>
+
+    <p>
+      Wil je dat ik een extra sectie "Crew" of "Credits" maak voor bijv. <strong>The Memix</strong> of anderen? Dat kan makkelijk.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Aapje Djamila.</p>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aapje Djamila - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Officiële site van Aapje Djamila. Muziek, video's en projecten.">
+</head>
+<body class="dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo"><a href="index.html">Aapje Djamila</a></h1>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="over.html">Over</a>
+        <a href="videos.html">Video's</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--dark">
+      <div class="container hero-inner">
+        <div>
+          <p class="badge">new drop</p>
+          <h2>Dark club energy. Late night vibes. 🖤</h2>
+          <p>
+            Welkom op de officiële website van <strong>Aapje Djamila</strong>. Hier komen mijn video's, muziek en andere
+            projecten. Alles in een donkere, neon-achtige stijl – alsof je in een videoclip staat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <h3>Laatste update</h3>
+      <p>
+        Deze site is handgemaakt in HTML, zodat ik hem direct op <strong>www.aapjedjamila.nl</strong> kan hosten.
+        Wil ik later meer pagina’s? Dan voeg ik ze gewoon toe.
+      </p>
+    </section>
+
+    <section class="container section" id="videos">
+      <h3>Laatste video's</h3>
+      <p>Een selectie van video's. Vervang de YouTube-links hieronder door je eigen video's.</p>
+
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="YouTube video"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h4>Club session #1</h4>
+        </div>
+
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/ysz5S6PUM-U"
+              title="YouTube video"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h4>Behind the scenes</h4>
+        </div>
+
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/jNQXAC9IVRw"
+              title="YouTube video"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h4>Throwback upload</h4>
+        </div>
+      </div>
+
+      <p class="more-link">
+        👉 Meer video's? Ga naar <a href="videos.html">Video's</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Aapje Djamila. All rights reserved.</p>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
