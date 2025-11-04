@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Video's - Aapje Djamila</title>
+  <meta name="description" content="Bekijk Aapje Djamila video's en playlists.">
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 </head>
 <body class="dark">
   <header class="site-header">
@@ -20,53 +22,33 @@
 
   <main class="container section">
     <h2>Video's</h2>
-    <p>Volledige lijst met video's / embeds. Zet hier gewoon je nieuwste uploads.</p>
+    <p class="muted">Hier staan een playlist-embed en een grid met losse videos. Pas de IDs gerust aan.</p>
 
     <h3>Playlist</h3>
-    <p>Vervang de <code>list=...</code> hieronder door jouw eigen playlist-ID.</p>
     <div class="video-wrapper video-wrapper--tall">
-      <iframe
-        src="https://www.youtube.com/embed?listType=playlist&list=PL9tY0BWXOZFtQzzzzzz"
-        title="YouTube playlist"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
+      <!-- vervang de list= met jouw playlist ID -->
+      <iframe src="https://www.youtube.com/embed?listType=playlist&list=PL9tY0BWXOZFtQzzzzzz" title="YouTube playlist" allowfullscreen></iframe>
     </div>
 
     <h3>Losse video's</h3>
     <div class="video-grid">
       <div class="video-card">
         <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="YouTube video"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
         </div>
-        <h4>Showcase</h4>
+        <h4>Main upload</h4>
       </div>
       <div class="video-card">
         <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/ysz5S6PUM-U"
-            title="YouTube video"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+          <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="YouTube video" allowfullscreen></iframe>
         </div>
-        <h4>Studio snippet</h4>
+        <h4>Gaming / 2e kanaal</h4>
       </div>
       <div class="video-card">
         <div class="video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/jNQXAC9IVRw"
-            title="YouTube video"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+          <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube video" allowfullscreen></iframe>
         </div>
-        <h4>Throwback clip</h4>
+        <h4>Music channel</h4>
       </div>
     </div>
   </main>
@@ -75,9 +57,7 @@
     <div class="container">
       <p>© <span id="year"></span> Aapje Djamila.</p>
     </div>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   </footer>
 </body>
 </html>
