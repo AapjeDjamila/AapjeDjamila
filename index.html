@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aapje Djamila - Home</title>
+  <meta name="description" content="Welkom op de website van Aapje Djamila. Video's, muziek en socials.">
   <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Officiële site van Aapje Djamila. Muziek, video's en projecten.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 </head>
 <body class="dark">
   <header class="site-header">
@@ -20,82 +21,72 @@
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero hero--dark">
       <div class="container hero-inner">
-        <div>
-          <p class="badge">new drop</p>
-          <h2>Dark club energy. Late night vibes. 🖤</h2>
-          <p>
-            Welkom op de officiële website van <strong>Aapje Djamila</strong>. Hier komen mijn video's, muziek en andere
-            projecten. Alles in een donkere, neon-achtige stijl – alsof je in een videoclip staat.
-          </p>
-        </div>
+        <h2>welkom op de website van aapjedjamila</h2>
+        <p>Dark club energy. Video’s, muziek en meer. Scroll voor mijn nieuwste uploads en Spotify releases.</p>
       </div>
     </section>
 
+    <!-- YOUTUBE -->
     <section class="container section">
-      <h3>Laatste update</h3>
-      <p>
-        Deze site is handgemaakt in HTML, zodat ik hem direct op <strong>www.aapjedjamila.nl</strong> kan hosten.
-        Wil ik later meer pagina’s? Dan voeg ik ze gewoon toe.
-      </p>
-    </section>
-
-    <section class="container section" id="videos">
-      <h3>Laatste video's</h3>
-      <p>Een selectie van video's. Vervang de YouTube-links hieronder door je eigen video's.</p>
+      <h3>Mijn YouTube video’s</h3>
+      <p class="muted">Een paar recente uploads. Meer zien? Check <a href="videos.html">de Video’s pagina</a> of mijn kanalen onderaan.</p>
 
       <div class="video-grid">
+        <!-- vervang de IDs met je eigen video's -->
         <div class="video-card">
           <div class="video-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="YouTube video"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allowfullscreen></iframe>
           </div>
-          <h4>Club session #1</h4>
+          <h4>Main upload</h4>
         </div>
-
         <div class="video-card">
           <div class="video-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/ysz5S6PUM-U"
-              title="YouTube video"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
+            <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="YouTube video" allowfullscreen></iframe>
           </div>
-          <h4>Behind the scenes</h4>
+          <h4>Gaming / 2e kanaal</h4>
         </div>
-
         <div class="video-card">
           <div class="video-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/jNQXAC9IVRw"
-              title="YouTube video"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
+            <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="YouTube video" allowfullscreen></iframe>
           </div>
-          <h4>Throwback upload</h4>
+          <h4>Music channel</h4>
         </div>
       </div>
+    </section>
 
-      <p class="more-link">
-        👉 Meer video's? Ga naar <a href="videos.html">Video's</a>.
-      </p>
+    <!-- SPOTIFY -->
+    <section class="container section">
+      <h3>Spotify muziek</h3>
+      <p class="muted">Mijn artiestenprofiel op Spotify. Luister hieronder of open in de app.</p>
+      <div class="spotify-embed">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/62owV9qaNfS6fxqlx8rQEZ?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- SOCIALS -->
+    <section class="container section">
+      <h3>Hieronder staan links naar mijn socials</h3>
+      <ul class="social-list">
+        <li><a href="https://www.youtube.com/@aapjedjamila" target="_blank" rel="noopener">YouTube — main</a></li>
+        <li><a href="https://www.youtube.com/@aapjedjamila2" target="_blank" rel="noopener">YouTube — 2e kanaal (gaming/other)</a></li>
+        <li><a href="https://www.youtube.com/@AapjedjamilaMusic" target="_blank" rel="noopener">YouTube — music</a></li>
+        <li><a href="https://www.tiktok.com/@sinterklaas_memez" target="_blank" rel="noopener">TikTok — @sinterklaas_memez</a></li>
+        <li><a href="https://x.com/AapjeDjamila" target="_blank" rel="noopener">X / Twitter — @AapjeDjamila</a></li>
+        <li><a href="https://open.spotify.com/artist/62owV9qaNfS6fxqlx8rQEZ" target="_blank" rel="noopener">Spotify — Aapje Djamila</a></li>
+        <li><a href="https://www.roblox.com/users/8061240559/profile" target="_blank" rel="noopener">Roblox — profiel</a></li>
+        <li><a href="https://www.instagram.com/aapjedjamila/" target="_blank" rel="noopener">Instagram — @aapjedjamila</a></li>
+      </ul>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Aapje Djamila. All rights reserved.</p>
+      <p>© <span id="year"></span> Aapje Djamila.</p>
     </div>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
   </footer>
 </body>
 </html>
